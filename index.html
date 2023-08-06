@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Background Remover</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .upload-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Background Remover</h1>
+    <div class="upload-container">
+      <input type="file" id="imageInput" accept="image/*">
+      <button onclick="removeBackground()">Remove Background</button>
+    </div>
+    <div id="outputContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
